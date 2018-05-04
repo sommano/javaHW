@@ -1,0 +1,19 @@
+package com.java24hours;
+
+import java.util.*;
+
+public class StringLister {
+    String[] names = { "Carly", "Sam", "Kiki", "Lulu",
+        "Hayden", "Elizabeth", "Kristina", "Molly", "Laura" };
+
+    public StringLister(String[] moreNames) {
+        ArrayList<String> list = new ArrayList<String>();
+        for (int i = 0; i < names.length; i++) {
+            list.add(names[i]);
+        }
+        Collections.sort(list);
+        for (String name : list) {
+            System.out.println(name);
+        }
+    }
+}
